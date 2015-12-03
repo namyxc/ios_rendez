@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Exercise1.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSArray *items = @[@13, @54, @34, @56, @20, @4365436, @435];
+    NSArray *orderedItems = [Exercise1 orderNumbers:items];
+    
+    NSLog(@"items: %@", items);
+    NSLog(@"ordered items: %@", orderedItems);
+    
     return YES;
 }
 
